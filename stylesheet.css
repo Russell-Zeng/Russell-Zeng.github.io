@@ -490,38 +490,7 @@ span.highlight {
 }
 
 /* Tag Cloud Styles */
-#tagcloud-container {
-  width: 100%;
-  max-width: 800px;
-  height: 300px;
-  position: relative;
-  margin: 0 auto;
-  overflow: hidden;
-  /* background: #fcfcfc; */
-  /* border: 1px solid #eee; */
-  border-radius: 8px;
-}
 
-.tagcloud-item {
-  position: absolute;
-  top: 0;
-  left: 0;
-  text-decoration: none;
-  font-family: 'Lato', Verdana, Helvetica, sans-serif;
-  font-weight: bold;
-  padding: 5px 10px;
-  border-radius: 4px;
-  white-space: nowrap;
-  transform-origin: 50% 50%;
-  transition: color 0.2s;
-  cursor: pointer;
-  will-change: transform, opacity, filter;
-}
-
-.tagcloud-item:hover {
-  color: #ff0000 !important;
-  z-index: 1000 !important;
-}
 
 /* Screenshot Projects */
 .screenshot-projects {

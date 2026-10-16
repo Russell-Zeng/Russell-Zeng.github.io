@@ -17,3 +17,5 @@ Primary sources: https://arxiv.org/abs/2606.09243, https://arxiv.org/abs/2606.06
 - Omit UNSW visiting education and all academic rankings/grade summaries.
 - Zhiluo internship and switchgear project dates: March–October 2026.
 - Full older-paper author sources: https://researchwith.stevens.edu/en/publications/few-shot-scale-insensitive-object-detection-for-edge-computing-pl/, https://doi.org/10.1016/j.asoc.2020.106907, https://doi.org/10.1007/s00521-021-06280-4, https://api.crossref.org/works/10.1145/3381271.3381293.
+
+- Projects section begins directly with the six project descriptions; the introductory sentence and animated project cloud were removed at the owner’s request.
