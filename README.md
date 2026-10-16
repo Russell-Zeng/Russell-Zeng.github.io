@@ -1,4 +1,4 @@
-# Russell Zeng — Academic Homepage
+# Yuan Zeng (曾元) — Academic Homepage
 
 Personal academic homepage based on [w-r-s/academic-homepage-template](https://github.com/w-r-s/academic-homepage-template), upstream commit `3e688b9cdb8928aa90ce2469b932cd4661723f97`.
 
@@ -6,28 +6,26 @@ Website: https://russell-zeng.github.io/
 
 ## 当前状态
 
-新模板已替换旧版网站，保留橙色链接、论文卡片与分类筛选、项目标签云、返回顶部及景观页脚。当前只有 GitHub 公开姓名 Russell Zeng 和 GitHub 链接属于已确认个人信息；头像、机构、论文、经历、项目、服务、教学及获奖信息均为明确标注的占位内容。论文配图仅为原模板版式预览，后续需替换。
+已根据曾元提供的简历填入简介、照片、邮箱、13 篇论文、4 段教育经历、2 段工作/实习经历、6 个项目、3 项授权专利和 ICMIP 2020 报告奖。
+
+主页使用英文主体，保留中文姓名、机构及项目名称。论文在审状态按简历明确标注；未提供的社交账号及 Google Scholar 链接不展示。完整内容来源及维护说明见 `CONTENT_NOTES.md`。
 
 ## 本地预览
-
-在本目录运行：
 
 ```bash
 python3 -m http.server 8080 --bind 127.0.0.1
 ```
 
-打开 http://127.0.0.1:8080 。纯静态页面，无需安装 Node.js、Jekyll 或执行构建。
+打开 http://127.0.0.1:8080 。纯静态页面，无需安装依赖或构建。
 
-## 后续按简历更新
+## 内容维护
 
-- `index.html`：姓名、简介、联系方式、News、论文、经历、项目、服务教学、荣誉和页脚。
-- `images/template/avatar.svg`：当前占位头像；拿到照片后替换图片并更新 HTML 路径。
-- `images/paper/`：论文示意图。
-- `images/experience/`：景观页脚背景。
-- `stylesheet.css`：原模板样式。
-- `custom.css`：占位内容及手机排版的少量补充样式。
-
-邮箱、CV 和 Scholar 未提供前显示灰色占位文字。提供 PDF 简历后可放到 `files/cv.pdf` 并启用 CV 链接。项目云暂用占位标签，没有虚构星标数。更新内容时同时更新页脚日期及论文分类按钮；分类计数自动生成。
+- `index.html`：公开学术主页。
+- `cv.html`：可阅读、打印或通过浏览器另存 PDF 的公开 CV 视图；不含手机号、出生日期和籍贯，原始简历未上传。
+- `images/profile.jpg`：简历照片。
+- `images/paper/`：来自对应研究项目页面的论文配图。
+- `stylesheet.css`：原模板样式；`custom.css`：内容和响应式布局补充。
+- 更新论文时同步修改分类按钮、状态和公开 CV。分类计数自动生成。
 
 ## GitHub Pages
 

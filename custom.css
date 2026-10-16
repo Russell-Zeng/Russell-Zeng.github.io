@@ -1,19 +1,72 @@
-/* Small additions to the original w-r-s template for pending content and mobile. */
-.placeholder-note { color: #777; line-height: 1.6; }
-.pending-contact { display: inline-flex; align-items: center; gap: 4px; color: #888; }
-.pending-contact svg { width: 16px; height: 16px; }
-.contact-sub { font-size: 12px; }
-.publication-preview { width: 100%; max-width: 190px; height: auto; border-radius: 6px; }
+/* Content and responsive additions to w-r-s/academic-homepage-template. */
+* { box-sizing: border-box; }
+body { margin: 8px; color: #222; }
+.site-main { max-width: 800px; margin: 0 auto; }
+.profile-table { width: 100%; border-spacing: 0; }
+.profile-copy { width: 72%; padding: 20px; vertical-align: middle; }
+.profile-photo { width: 28%; padding: 20px; vertical-align: middle; }
+.profile-photo img { width: 100%; height: auto; border-radius: 8px; display: block; }
+.profile-name { font: 400 28px 'Lato', Verdana, sans-serif; text-align: center; margin: 12px 0 20px; }
+.profile-name span { white-space: nowrap; }
+#astronaut-btn { border: 0; background: transparent; font-size: 23px; margin-left: 5px; padding: 0; cursor: pointer; }
+p { line-height: 1.55; }
+.profile-divider { height: 1px; background: linear-gradient(to right, transparent, #ccc 20%, #ccc 80%, transparent); margin: 14px 0; }
+.contact-links { line-height: 1.9; }
+.contact-links a { max-width: 100%; overflow-wrap: anywhere; }
+.section-links { text-align: center; line-height: 2; margin: 10px 0 32px; color: #bbb; font-size: 13px; }
+.section-links a { font-size: 13px; }
+.page-section { margin-bottom: 34px; }
+.section-heading { font: 400 25px 'Lato', Verdana, sans-serif; text-decoration: underline; text-decoration-color: #fba524; text-underline-offset: 4px; margin: 0 0 20px; }
+.news-updates { list-style: none; padding: 0 16px; }
+.news-updates li { margin: 8px 0; line-height: 1.6; }
+.publications-table { width: 100%; border-spacing: 0 16px; border-collapse: separate; }
+.paper-visual { padding: 20px; width: 30%; vertical-align: middle; }
+.paper-copy { padding: 20px; width: 70%; vertical-align: middle; }
+.publication-preview { width: 100%; max-width: 190px; max-height: 190px; height: auto; object-fit: contain; display: block; border-radius: 4px; }
+.paper-title { font-size: 14px; line-height: 1.5; margin: 0 0 7px; }
+.paper-authors, .paper-links, .venue, .under-review { margin: 5px 0; line-height: 1.55; }
+.paper-authors { color: #555; font-size: 13px; }
+.venue { font-weight: 700; }
+.under-review { color: #81632e; font-style: italic; font-weight: 700; }
+.paper-summary { margin: 9px 0 0; color: #555; }
+.paper-topic { padding: 24px 12px; background: #faf6ed; border: 1px solid #eee5d5; border-radius: 6px; text-align: center; color: #886123; font: 700 15px/1.6 'Lato',sans-serif; }
+.highlight-key { background: #ffffe0; }
+.experience-row { display: grid; grid-template-columns: 100px 1fr; gap: 25px; align-items: center; margin: 0 20px 28px; }
+.experience-row h3 { font-size: 15px; line-height: 1.5; margin: 0 0 4px; }
+.experience-row p { margin: 4px 0; }
+.institution-logo { text-align: center; }
+.institution-logo img { width: 100%; max-width: 90px; height: 80px; object-fit: contain; }
+.institution-mark { display: inline-block; border: 1px solid #d6bd7f; color: #9b7a30; padding: 20px 10px; font-weight: 700; border-radius: 5px; }
+.chinese-name { font-weight: 400; color: #777; font-size: 13px; }
+.date { color: #946d2d; font-size: 13px; }
+.muted { color: #777; }
+.academic-note { padding: 0 20px; }
+.project-card { border-top: 1px solid #e6e1d8; padding: 20px 4px 4px; margin-top: 18px; scroll-margin-top: 20px; }
+.project-card h3 { font-size: 16px; line-height: 1.5; margin: 0 0 4px; }
+.project-card p { margin: 6px 0; }
+.patent-list { padding-left: 22px; }
+.patent-list li { margin-bottom: 20px; line-height: 1.6; }
+.patent-list p { margin: 5px 0; }
 @media (max-width: 600px) {
-  #about > tbody > tr > td > table:first-child > tbody > tr { display: flex; flex-direction: column-reverse; }
-  #about > tbody > tr > td > table:first-child > tbody > tr > td { width: auto !important; max-width: 100% !important; padding: 16px !important; }
-  #about > tbody > tr > td > table:first-child > tbody > tr > td:last-child { text-align: center; }
-  #about > tbody > tr > td > table:first-child > tbody > tr > td:last-child img { width: 150px !important; }
-  .publications-table tr[data-tags] { display: block; margin-bottom: 16px; }
-  .publications-table tr[data-tags] > td { display: block; width: auto !important; border: 1px solid #ddd !important; border-radius: 0 !important; }
-  .publications-table tr[data-tags] > td:first-child { border-radius: 8px 8px 0 0 !important; border-bottom: 0 !important; text-align: center; }
-  .publications-table tr[data-tags] > td:last-child { border-radius: 0 0 8px 8px !important; }
-  #experience td:first-child { width: 25% !important; padding: 10px !important; }
-  #experience img { width: 100%; max-width: 80px; }
+ .site-main { padding: 0 8px; }
+ .profile-table > tbody > tr { display: flex; flex-direction: column-reverse; }
+ .profile-copy, .profile-photo { width: 100%; padding: 16px 8px; }
+ .profile-photo img { width: 150px; margin: 0 auto; }
+ .profile-name { font-size: 26px; }
+ .section-links { margin-bottom: 26px; }
+ .tag-filter { gap: 6px !important; }
+ .tag-btn { padding: 6px 10px !important; font-size: 12px !important; }
+ .publications-table tr[data-tags] { display: block; margin-bottom: 16px; }
+ .publications-table tr[data-tags] > td { display: block; width: 100%; border: 1px solid #ddd !important; border-radius: 0 !important; padding: 18px; }
+ .publications-table tr[data-tags] > td:first-child { border-radius: 8px 8px 0 0 !important; border-bottom: 0 !important; text-align: center; }
+ .publications-table tr[data-tags] > td:last-child { border-radius: 0 0 8px 8px !important; }
+ .publication-preview { max-width: 250px; max-height: 180px; object-fit: contain; margin: 0 auto; }
+ .paper-topic { padding: 12px; }
+ .experience-row { grid-template-columns: 64px 1fr; gap: 14px; margin: 0 0 24px; }
+ .institution-logo img { max-width: 64px; height: 64px; }
+ .institution-mark { padding: 16px 4px; font-size: 12px; }
+ .chinese-name { display: block; }
+ .academic-note { padding: 0; }
+ .news-updates { padding: 0; }
 }
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
