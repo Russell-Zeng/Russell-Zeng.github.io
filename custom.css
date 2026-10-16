@@ -1,0 +1,19 @@
+/* Small additions to the original w-r-s template for pending content and mobile. */
+.placeholder-note { color: #777; line-height: 1.6; }
+.pending-contact { display: inline-flex; align-items: center; gap: 4px; color: #888; }
+.pending-contact svg { width: 16px; height: 16px; }
+.contact-sub { font-size: 12px; }
+.publication-preview { width: 100%; max-width: 190px; height: auto; border-radius: 6px; }
+@media (max-width: 600px) {
+  #about > tbody > tr > td > table:first-child > tbody > tr { display: flex; flex-direction: column-reverse; }
+  #about > tbody > tr > td > table:first-child > tbody > tr > td { width: auto !important; max-width: 100% !important; padding: 16px !important; }
+  #about > tbody > tr > td > table:first-child > tbody > tr > td:last-child { text-align: center; }
+  #about > tbody > tr > td > table:first-child > tbody > tr > td:last-child img { width: 150px !important; }
+  .publications-table tr[data-tags] { display: block; margin-bottom: 16px; }
+  .publications-table tr[data-tags] > td { display: block; width: auto !important; border: 1px solid #ddd !important; border-radius: 0 !important; }
+  .publications-table tr[data-tags] > td:first-child { border-radius: 8px 8px 0 0 !important; border-bottom: 0 !important; text-align: center; }
+  .publications-table tr[data-tags] > td:last-child { border-radius: 0 0 8px 8px !important; }
+  #experience td:first-child { width: 25% !important; padding: 10px !important; }
+  #experience img { width: 100%; max-width: 80px; }
+}
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
