@@ -20,16 +20,16 @@ p { line-height: 1.55; }
 .news-updates { list-style: none; padding: 0 16px; }
 .news-updates li { margin: 8px 0; line-height: 1.6; }
 .publications-table { width: 100%; border-spacing: 0 16px; border-collapse: separate; }
-.paper-visual { padding: 20px; width: 30%; vertical-align: middle; }
+.paper-visual { background: #fff !important; padding: 20px; width: 30%; vertical-align: middle; }
 .paper-copy { padding: 20px; width: 70%; vertical-align: middle; }
-.publication-preview { width: 100%; max-width: 190px; max-height: 190px; height: auto; object-fit: contain; display: block; border-radius: 4px; }
+.publication-preview { background: #fff; width: 100%; max-width: 190px; max-height: 190px; height: auto; object-fit: contain; display: block; border-radius: 4px; }
 .paper-title { font-size: 14px; line-height: 1.5; margin: 0 0 7px; }
 .paper-authors, .paper-links, .venue, .under-review { margin: 5px 0; line-height: 1.55; }
 .paper-authors { color: #555; font-size: 13px; }
 .venue { font-weight: 700; }
 .under-review { color: #81632e; font-style: italic; font-weight: 700; }
 .paper-summary { margin: 9px 0 0; color: #555; }
-.paper-topic { padding: 24px 12px; background: #faf6ed; border: 1px solid #eee5d5; border-radius: 6px; text-align: center; color: #886123; font: 700 15px/1.6 'Lato',sans-serif; }
+.paper-topic { padding: 24px 12px; background: #fff; border: 1px solid #eee5d5; border-radius: 6px; text-align: center; color: #886123; font: 700 15px/1.6 'Lato',sans-serif; }
 .highlight-key { background: #ffffe0; }
 .experience-row { display: grid; grid-template-columns: 100px 1fr; gap: 25px; align-items: center; margin: 0 20px 28px; }
 .experience-row h3 { font-size: 15px; line-height: 1.5; margin: 0 0 4px; }
